@@ -1103,3 +1103,4 @@ user_pref("security.ssl3.rsa_aes_128_sha",			true); // 0x2f
 
 // My additons
 user_pref("browser.tabs.insertRelatedAfterCurrent",			false);
+//
