@@ -339,7 +339,8 @@ user_pref("network.protocol-handler.external.ftp",		false);
 user_pref("network.protocol-handler.external.file",		false);
 user_pref("network.protocol-handler.external.about",		false);
 user_pref("network.protocol-handler.external.chrome",		false);
-user_pref("network.protocol-handler.expose-all",		false);
+// I commented out the line below  this to pull up file save dialog with draw.io
+// user_pref("network.protocol-handler.expose-all",		false);
 user_pref("network.protocol-handler.expose.http",		true);
 user_pref("network.protocol-handler.expose.https",		true);
 user_pref("network.protocol-handler.expose.javascript",		true);
