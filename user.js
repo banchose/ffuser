@@ -37,7 +37,7 @@ user_pref("dom.enable_user_timing",				false);
 
 // PREF: Disable Web Audio API
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1288359
-user_pref("dom.webaudio.enabled",				false);
+//user_pref("dom.webaudio.enabled",				false);
 
 // PREF: Disable Location-Aware Browsing (geolocation)
 // https://www.mozilla.org/en-US/firefox/geolocation/
@@ -104,12 +104,12 @@ user_pref("beacon.enabled",					false);
 // PREF: Disable clipboard event detection (onCut/onCopy/onPaste) via Javascript (disabled)
 // NOTICE-DISABLED: Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)
 // https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled
-// user_pref("dom.event.clipboardevents.enabled",			false);
+//user_pref("dom.event.clipboardevents.enabled",			false);
 
 // PREF: Disable "copy to clipboard" functionality via Javascript (Firefox >= 41) (disabled)
 // NOTICE-DISABLED: Disabling clipboard operations will break legitimate JS-based "copy to clipboard" functionality
 // https://hg.mozilla.org/mozilla-central/rev/2f9f8ea4b9c3
-// user_pref("dom.allow_cut_copy", false);
+//user_pref("dom.allow_cut_copy", false);
 
 // PREF: Disable speech recognition
 // https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html
@@ -215,7 +215,7 @@ user_pref("general.useragent.locale",				"en-US");
 
 // PREF: Don't use OS values to determine locale, force using Firefox locale setting
 // http://kb.mozillazine.org/Intl.locale.matchOS
-// user_pref("intl.locale.matchOS",				false);
+user_pref("intl.locale.matchOS",				false);
 
 // PREF: Don't use Mozilla-provided location-specific search engines
 user_pref("browser.search.geoSpecificDefaults",			false);
@@ -261,7 +261,7 @@ user_pref("network.manage-offline-status",			false);
 
 // PREF: Enforce Mixed Passive Content blocking (a.k.a. Mixed Display Content) (disabled)
 // NOTICE-DISABLED: Enabling Mixed Display Content blocking can prevent images/styles... from loading properly when connection to the website is only partially secured
-// user_pref("security.mixed_content.block_display_content",	true);
+//user_pref("security.mixed_content.block_display_content",	true);
 
 // PREF: Disable JAR from opening Unsafe File Types
 // http://kb.mozillazine.org/Network.jar.open-unsafe-types
@@ -292,7 +292,7 @@ user_pref("javascript.options.asmjs",				false);
 // PREF: Disable SVG in OpenType fonts
 // https://wiki.mozilla.org/SVGOpenTypeFonts
 // https://github.com/iSECPartners/publications/tree/master/reports/Tor%20Browser%20Bundle
-user_pref("gfx.font_rendering.opentype_svg.enabled",		false);
+//user_pref("gfx.font_rendering.opentype_svg.enabled",		false);
 
 // PREF: Disable in-content SVG rendering (Firefox >= 53)
 // NOTICE: Disabling SVG support breaks many UI elements on many sites
@@ -330,25 +330,24 @@ user_pref("browser.display.use_document_fonts",			0);
 // If you want to enable a protocol, set network.protocol-handler.expose.(protocol) to true and network.protocol-handler.external.(protocol) to:
 //   * true, if the protocol should be handled by an external application
 //   * false, if the protocol should be handled internally by Firefox
-user_pref("network.protocol-handler.warn-external-default",	true);
-user_pref("network.protocol-handler.external.http",		false);
-user_pref("network.protocol-handler.external.https",		false);
-user_pref("network.protocol-handler.external.javascript",	false);
-user_pref("network.protocol-handler.external.moz-extension",	false);
-user_pref("network.protocol-handler.external.ftp",		false);
-user_pref("network.protocol-handler.external.file",		false);
-user_pref("network.protocol-handler.external.about",		false);
-user_pref("network.protocol-handler.external.chrome",		false);
-// I commented out the line below  this to pull up file save dialog with draw.io
-// user_pref("network.protocol-handler.expose-all",		false);
-user_pref("network.protocol-handler.expose.http",		true);
-user_pref("network.protocol-handler.expose.https",		true);
-user_pref("network.protocol-handler.expose.javascript",		true);
-user_pref("network.protocol-handler.expose.moz-extension",	true);
-user_pref("network.protocol-handler.expose.ftp",		true);
-user_pref("network.protocol-handler.expose.file",		true);
-user_pref("network.protocol-handler.expose.about",		true);
-user_pref("network.protocol-handler.expose.chrome",		true);
+//user_pref("network.protocol-handler.warn-external-default",	true);
+//user_pref("network.protocol-handler.external.http",		false);
+//user_pref("network.protocol-handler.external.https",		false);
+//user_pref("network.protocol-handler.external.javascript",	false);
+//user_pref("network.protocol-handler.external.moz-extension",	false);
+//user_pref("network.protocol-handler.external.ftp",		false);
+//user_pref("network.protocol-handler.external.file",		false);
+//user_pref("network.protocol-handler.external.about",		false);
+//user_pref("network.protocol-handler.external.chrome",		false);
+//user_pref("network.protocol-handler.expose-all",		false);
+//user_pref("network.protocol-handler.expose.http",		true);
+//user_pref("network.protocol-handler.expose.https",		true);
+//user_pref("network.protocol-handler.expose.javascript",		true);
+//user_pref("network.protocol-handler.expose.moz-extension",	true);
+//user_pref("network.protocol-handler.expose.ftp",		true);
+//user_pref("network.protocol-handler.expose.file",		true);
+//user_pref("network.protocol-handler.expose.about",		true);
+//user_pref("network.protocol-handler.expose.chrome",		true);
 
 /******************************************************************************
  * SECTION: Extensions / plugins                                                       *
@@ -666,7 +665,7 @@ user_pref("security.sri.enable",				true);
 
 // PREF: Don't send referer headers when following links across different domains (disabled)
 // https://github.com/pyllyukko/user.js/issues/227
-// user_pref("network.http.referer.XOriginPolicy",		2);
+//user_pref("network.http.referer.XOriginPolicy",		2);
 
 // PREF: Accept Only 1st Party Cookies
 // http://kb.mozillazine.org/Network.cookie.cookieBehavior#1
@@ -678,7 +677,7 @@ user_pref("security.sri.enable",				true);
 // https://feeding.cloud.geek.nz/posts/tweaking-cookies-for-privacy-in-firefox/
 // http://kb.mozillazine.org/Network.cookie.thirdparty.sessionOnly
 // https://developer.mozilla.org/en-US/docs/Cookies_Preferences_in_Mozilla#network.cookie.thirdparty.sessionOnly
-user_pref("network.cookie.thirdparty.sessionOnly",		true);
+//user_pref("network.cookie.thirdparty.sessionOnly",		true);
 
 // PREF: Spoof User-agent (disabled)
 //user_pref("general.useragent.override",				"Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0");
@@ -704,6 +703,7 @@ user_pref("network.cookie.thirdparty.sessionOnly",		true);
 // http://kb.mozillazine.org/Browser.cache.offline.enable
 //user_pref("browser.cache.offline.enable",			false);
 
+
 // PREF: Clear history when Firefox closes
 // https://support.mozilla.org/en-US/kb/Clear%20Recent%20History#w_how-do-i-make-firefox-clear-my-history-automatically
 // NOTICE-DISABLED: Installing user.js will **remove your saved passwords** (https://github.com/pyllyukko/user.js/issues/27)
@@ -717,10 +717,10 @@ user_pref("network.cookie.thirdparty.sessionOnly",		true);
 //user_pref("privacy.clearOnShutdown.offlineApps",		true);
 //user_pref("privacy.clearOnShutdown.passwords",			true);
 //user_pref("privacy.clearOnShutdown.sessions",			true);
-user_pref("privacy.clearOnShutdown.openWindows",		true);
+//user_pref("privacy.clearOnShutdown.openWindows",		true);
 
 // PREF: Set time range to "Everything" as default in "Clear Recent History"
-user_pref("privacy.sanitize.timeSpan",				0);
+//user_pref("privacy.sanitize.timeSpan",				0);
 
 // PREF: Clear everything but "Site Preferences" in "Clear Recent History"
 user_pref("privacy.cpd.offlineApps",				true);
@@ -754,7 +754,7 @@ user_pref("privacy.cpd.sessions",				true);
 // PREF: Disable password manager (disabled)
 // NOTICE: Make sure to set a Master password to protect Firefox's password storage against basic malware that could extract your password information
 // CIS Version 1.2.0 October 21st, 2011 2.5.2
-// user_pref("signon.rememberSignons",				false);
+//user_pref("signon.rememberSignons",				false);
 
 // PREF: Disable form autofill, don't save information entered in web page forms and the Search Bar
 //user_pref("browser.formfill.enable",				false);
@@ -798,7 +798,7 @@ user_pref("security.insecure_field_warning.contextual.enabled", true);
 
 // PREF: Delete temporary files on exit
 // https://bugzilla.mozilla.org/show_bug.cgi?id=238789
-user_pref("browser.helperApps.deleteTempFileOnExit",		true);
+//user_pref("browser.helperApps.deleteTempFileOnExit",		true);
 
 // PREF: Do not create screenshots of visited pages (relates to the "new tab page" feature)
 // https://support.mozilla.org/en-US/questions/973320
@@ -831,11 +831,11 @@ user_pref("security.insecure_password.ui.enabled",		true);
 // https://support.mozilla.org/en-US/questions/1043508
 // Does not prevent JS leaks of the page close event.
 // https://developer.mozilla.org/en-US/docs/Web/Events/beforeunload
-user_pref("dom.disable_beforeunload",    true);
+//user_pref("dom.disable_beforeunload",    true);
 
 // PREF: Disable Downloading on Desktop
 // CIS 2.3.2
-user_pref("browser.download.folderList",			2);
+//user_pref("browser.download.folderList",			2);
 
 // PREF: Always ask the user where to download
 // https://developer.mozilla.org/en/Download_Manager_preferences (obsolete)
@@ -883,7 +883,7 @@ user_pref("browser.urlbar.autoFill.typed",			false);
 // PREF: Disable CSS :visited selectors
 // https://blog.mozilla.org/security/2010/03/31/plugging-the-css-history-leak/
 // https://dbaron.org/mozilla/visited-privacy
-user_pref("layout.css.visited_links_enabled",			false);
+//user_pref("layout.css.visited_links_enabled",			false);
 
 // PREF: Disable URL bar autocomplete and history/bookmarks suggestions dropdown (disabled)
 // http://kb.mozillazine.org/Disabling_autocomplete_-_Firefox#Firefox_3.5
@@ -901,7 +901,7 @@ user_pref("security.password_lifetime",				1);
 
 // PREF: Display a notification bar when websites offer data for offline use
 // http://kb.mozillazine.org/Browser.offline-apps.notify
-user_pref("browser.offline-apps.notify",			true);
+//user_pref("browser.offline-apps.notify",			true);
 
 /******************************************************************************
  * SECTION: Cryptography                                                      *
@@ -1100,8 +1100,3 @@ user_pref("security.ssl3.dhe_dss_camellia_256_sha",		false);
 // PREF: Fallbacks due compatibility reasons
 user_pref("security.ssl3.rsa_aes_256_sha",			true); // 0x35
 user_pref("security.ssl3.rsa_aes_128_sha",			true); // 0x2f
-
-
-// My additons
-user_pref("browser.tabs.insertRelatedAfterCurrent",			false);
-//
