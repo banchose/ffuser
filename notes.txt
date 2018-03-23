@@ -1,0 +1,11 @@
+These setting caused problems
+
+privacy.resistFingerprinting --> This puts time in UTC in Fastmail and potentially other web sites
+security.cert_pinning.enforcement_level ---> set to 2, default 1.  Effects Zscaler and draw.io saving to Dropbox
+security.mixed_content.block_active_content --> This breaks many sites when set to false
+
+network.protocol-handler* --> I think this stopped me from saving to local on draw.io
+
+
+Additions
+browser.tabs.insertRelatedAfterCurrent --> Put open tabs at the end and not inserted
