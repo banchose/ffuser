@@ -9,3 +9,68 @@ network.protocol-handler* --> I think this stopped me from saving to local on dr
 
 Additions
 browser.tabs.insertRelatedAfterCurrent --> Put open tabs at the end and not inserted
+
+
+
+
+This is a diff of lines missing in pyllyukko user.js but in mine
+< means missing in file 2 which is pyllyukko user.js
+
+(ins)[1]$ diff ~/gitdir/ffuser/user.js ~/gitdir/user.js/user.js | grep "^<"
+< //user_pref("dom.webaudio.enabled",               false);
+< //user_pref("dom.event.clipboardevents.enabled",          false);
+< //user_pref("dom.allow_cut_copy", false);
+< //user_pref("security.mixed_content.block_active_content",    true);
+< //user_pref("security.mixed_content.block_display_content",   true);
+< //user_pref("gfx.font_rendering.opentype_svg.enabled",        false);
+< //user_pref("svg.disabled", true);
+< //user_pref("network.protocol-handler.warn-external-default", true);
+< //user_pref("network.protocol-handler.external.http",     false);
+< //user_pref("network.protocol-handler.external.https",        false);
+< //user_pref("network.protocol-handler.external.javascript",   false);
+< //user_pref("network.protocol-handler.external.moz-extension",    false);
+< //user_pref("network.protocol-handler.external.ftp",      false);
+< //user_pref("network.protocol-handler.external.file",     false);
+< //user_pref("network.protocol-handler.external.about",        false);
+< //user_pref("network.protocol-handler.external.chrome",       false);
+< //user_pref("network.protocol-handler.expose-all",        false);
+< //user_pref("network.protocol-handler.expose.http",       true);
+< //user_pref("network.protocol-handler.expose.https",      true);
+< //user_pref("network.protocol-handler.expose.javascript",     true);
+< //user_pref("network.protocol-handler.expose.moz-extension",  true);
+< //user_pref("network.protocol-handler.expose.ftp",        true);
+< //user_pref("network.protocol-handler.expose.file",       true);
+< //user_pref("network.protocol-handler.expose.about",      true);
+< //user_pref("network.protocol-handler.expose.chrome",     true);
+< //user_pref("privacy.resistFingerprinting",           true);
+< //user_pref("browser.urlbar.suggest.history",         false);
+< //user_pref("network.http.referer.spoofSource",           true);
+< //user_pref("network.http.referer.XOriginPolicy",     2);
+< //user_pref("network.cookie.cookieBehavior",          1);
+< //user_pref("network.cookie.thirdparty.sessionOnly",      true);
+< //user_pref("browser.cache.offline.enable",           false);
+< 
+< //user_pref("privacy.sanitize.sanitizeOnShutdown",        true);
+< //user_pref("privacy.clearOnShutdown.cache",          true);
+< //user_pref("privacy.clearOnShutdown.downloads",          true);
+< //user_pref("privacy.clearOnShutdown.formdata",           true);
+< //user_pref("privacy.clearOnShutdown.history",            true);
+< //user_pref("privacy.clearOnShutdown.offlineApps",        true);
+< //user_pref("privacy.clearOnShutdown.sessions",           true);
+< //user_pref("privacy.clearOnShutdown.openWindows",        true);
+< //user_pref("privacy.sanitize.timeSpan",              0);
+< //user_pref("places.history.enabled",             false);
+< //user_pref("browser.cache.disk.enable",              false);
+< //user_pref("browser.cache.disk_cache_ssl",           false);
+< //user_pref("browser.download.manager.retention",         0);
+< //user_pref("signon.rememberSignons",             false);
+< //user_pref("browser.formfill.enable",                false);
+< //user_pref("network.cookie.lifetimePolicy",          0);
+< //user_pref("signon.autofillForms",               false);
+< //user_pref("browser.formfill.expire_days",           0);
+< //user_pref("browser.sessionstore.privacy_level",         2);
+< //user_pref("browser.helperApps.deleteTempFileOnExit",        true);
+< //user_pref("browser.download.folderList",            2);
+< //user_pref("layout.css.visited_links_enabled",           false);
+< //user_pref("browser.offline-apps.notify",            true);
+
