@@ -1105,3 +1105,5 @@ user_pref("security.ssl3.rsa_aes_128_sha",			true); // 0x2f
 //
 // Open tabs at the end
 user_pref("browser.tabs.insertRelatedAfterCurrent",         false);
+// pop out window toolbar control 
+user_pref("dom.disable_window_open_feature.toolbar",   true);
