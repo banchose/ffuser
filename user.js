@@ -1140,3 +1140,6 @@ user_pref("security.ssl3.rsa_aes_128_sha",			true); // 0x2f
 
 user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.default", 1);
+
+
+user_pref("browser.search.widget.inNavBar", true);
