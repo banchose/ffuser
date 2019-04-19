@@ -1146,3 +1146,6 @@ user_pref("dom.webnotifications.enabled",                       true);
 
 // Put search to the right
 user_pref("browser.search.widget.inNavBar",                     true);
+
+
+user_pref("widget.content.gtk-theme-override", "Adwaita:light");
