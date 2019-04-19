@@ -1147,5 +1147,8 @@ user_pref("dom.webnotifications.enabled",                       true);
 // Put search to the right
 user_pref("browser.search.widget.inNavBar",                     true);
 
-
+// Text boxes show up in Gnomeish DMs
 user_pref("widget.content.gtk-theme-override", "Adwaita:light");
+
+// Pocketcasts doesn't work without this
+user_pref("security.mixed_content.block_display_content",       false);
