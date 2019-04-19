@@ -1137,9 +1137,12 @@ user_pref("security.ssl3.dhe_dss_camellia_256_sha",		false);
 user_pref("security.ssl3.rsa_aes_256_sha",			true); // 0x35
 user_pref("security.ssl3.rsa_aes_128_sha",			true); // 0x2f
 
+// My settings
+user_pref("media.autoplay.allow-muted",                         false);
+user_pref("media.autoplay.default",                                 1);
 
-user_pref("media.autoplay.allow-muted", false);
-user_pref("media.autoplay.default", 1);
+// Notifications
+user_pref("dom.webnotifications.enabled",                       true);
 
-
-user_pref("browser.search.widget.inNavBar", true);
+// Put search to the right
+user_pref("browser.search.widget.inNavBar",                     true);
