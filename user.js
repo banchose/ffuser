@@ -1152,3 +1152,6 @@ user_pref("widget.content.gtk-theme-override", "Adwaita:light");
 
 // Pocketcasts doesn't work without this
 user_pref("security.mixed_content.block_display_content",       false);
+
+// Insert tab at end
+User_pref("browser.tabs.insertRelatedAfterCurrent", false);
