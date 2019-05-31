@@ -29,12 +29,12 @@
 // PREF: Disable DOM timing API
 // https://wiki.mozilla.org/Security/Reviews/Firefox/NavigationTimingAPI
 // https://www.w3.org/TR/navigation-timing/#privacy
-user_pref("dom.enable_performance",				false);
+// user_pref("dom.enable_performance",				false);
 
 // PREF: Make sure the User Timing API does not provide a new high resolution timestamp
 // https://trac.torproject.org/projects/tor/ticket/16336
 // https://www.w3.org/TR/2013/REC-user-timing-20131212/#privacy-security
-user_pref("dom.enable_user_timing",				false);
+// user_pref("dom.enable_user_timing",				false);
 
 // PREF: Disable Web Audio API
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1288359
@@ -175,26 +175,26 @@ user_pref("dom.archivereader.enabled",				false);
 // PREF: Disable webGL
 // https://en.wikipedia.org/wiki/WebGL
 // https://www.contextis.com/resources/blog/webgl-new-dimension-browser-exploitation/
-user_pref("webgl.disabled",					true);
+// user_pref("webgl.disabled",					true);
 // PREF: When webGL is enabled, use the minimum capability mode
-user_pref("webgl.min_capability_mode",				true);
+// user_pref("webgl.min_capability_mode",				true);
 // PREF: When webGL is enabled, disable webGL extensions
 // https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API#WebGL_debugging_and_testing
-user_pref("webgl.disable-extensions",				true);
+// user_pref("webgl.disable-extensions",				true);
 // PREF: When webGL is enabled, force enabling it even when layer acceleration is not supported
 // https://trac.torproject.org/projects/tor/ticket/18603
-user_pref("webgl.disable-fail-if-major-performance-caveat",	true);
+// user_pref("webgl.disable-fail-if-major-performance-caveat",	true);
 // PREF: When webGL is enabled, do not expose information about the graphics driver
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1171228
 // https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_debug_renderer_info
-user_pref("webgl.enable-debug-renderer-info",			false);
+// user_pref("webgl.enable-debug-renderer-info",			false);
 // somewhat related...
 //user_pref("pdfjs.enableWebGL",					false);
 
 // PREF: Spoof dual-core CPU
 // https://trac.torproject.org/projects/tor/ticket/21675
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1360039
-user_pref("dom.maxHardwareConcurrency",				2);
+// user_pref("dom.maxHardwareConcurrency",				2);
 
 /******************************************************************************
  * SECTION: Misc                                                              *
@@ -250,7 +250,7 @@ user_pref("browser.fixup.alternate.enabled",			false);
 
 // PREF: When browser.fixup.alternate.enabled is enabled, strip password from 'user:password@...' URLs
 // https://github.com/pyllyukko/user.js/issues/290#issuecomment-303560851
-user_pref("browser.fixup.hide_user_pass", true);
+// user_pref("browser.fixup.hide_user_pass", true);
 
 // PREF: Send DNS request through SOCKS when SOCKS proxying is in use
 // https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
@@ -323,7 +323,7 @@ user_pref("browser.startup.homepage_override.buildID",		"20100101");
 // PREF: Prevent font fingerprinting
 // https://browserleaks.com/fonts
 // https://github.com/pyllyukko/user.js/issues/120
-user_pref("browser.display.use_document_fonts",			0);
+// user_pref("browser.display.use_document_fonts",			0);
 
 // PREF: Enable only whitelisted URL protocol handlers
 // http://kb.mozillazine.org/Network.protocol-handler.external-default
